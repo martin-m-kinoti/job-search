@@ -2,4 +2,35 @@ body {
     background-color: #bae8e8;
     font-family: Arial, sans-serif;
     color: black;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+table {
+    width: 275px;
+}
+
+th {
+    background: green;
+    text-align: center;
+}
+
+tr {
+    background: grey;
+    text-align: left;
+}
+
+.job_listings {
+    align-content: center;
+}
+
+button {
+    background-color: green;
+    text-align: center;
 }
