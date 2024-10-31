@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Job Search</title>
-        <h2>Job Search</h2>
+        <h2>JobLink</h2>
         <hr>
         <link rel="stylesheet" href="index.css">
     </head>
@@ -13,34 +13,36 @@
         <p>Welcome to Job Search, your comprehensive platform for finding the career opportunities 
             that fit you best. Here, we connect job seekers and employers with efficiency, enabling
             you to navigate the job market with ease and confidence</p>
-        <h4><i>About</i></h4>
+        <h4>About</h4>
         <hr>
         <p>Whether you're a recent graduate or an experienced professional, our platform offers 
            tailored job listings, insightful career resources, and tools to help you land the 
            right position. Dive in to discover positions across various industries, set up alerts,
            and take the next step in your career journey. Your ideal job is just a search away!</p>
-        <h4><i>Find your Dream Job</i></h4>
+        <h4>Find your Dream Job</h4>
         <hr>
         <div class="job_listings" style="display: flex; gap: 75px;">
-            <table border="1">
+            <!--first listing-->
+            <table>
                 <tr>
                     <th>Web Developer</th>
                 </tr>
                 <tr>
                     <td>Reporting to the lead Web Developer-the role holder will be responsible for 
-                        data analytics on the dynamic customer data.
+                        designing, coding, and maintaining websites and web applications to ensure 
+                        a high-quality user experience, functionality, and performance.
                     </td>
                 </tr>
                 <tr>
                     <td>Closes on 2024-11-05</td>
                 </tr>
                 <tr>
-                    <td><button>Search this Job</button></td>
+                    <td><button onclick="window.location.href='web_dev.html';">Search this Job</button></td>
                 </tr>
             </table>
 
             <!--second listing-->
-            <table border="1">
+            <table>
                 <tr>
                     <th>Security Analyst</th>
                 </tr>
@@ -54,12 +56,12 @@
                     <td>Closes on 2024-11-02</td>
                 </tr>
                 <tr>
-                    <td><button>Search this Job</button></td>
+                    <td><button onclick="window.location.href='sec_analyst.html';">Search this Job</button></td>
                 </tr>
             </table>
 
             <!--Third listing-->
-            <table border="1">
+            <table>
                 <tr>
                     <th>Finance Manager</th>
                 </tr>
@@ -72,9 +74,26 @@
                     <td>Closes on 2024-10-31</td>
                 </tr>
                 <tr>
-                    <td><button>Search this Job</button></td>
+                    <td><button onclick="window.location.href='finance.html';">Search this Job</button></td>
                 </tr>
             </table>
+
+            <!--fourth listing-->
+            <table>
+                <tr>
+                    <th>HR Manager</th>
+                </tr>
+                <tr>
+                    <td>To oversee and implement policies and practices that help manage the 
+                        organization's workforce.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Closes on 2024-11-07</td>
+                </tr>
+                <tr>
+                    <td><button onclick="window.location.href='HR.html';">Search this Job</button></td>
+                </tr>
         </div>
     </body>
 </html>
