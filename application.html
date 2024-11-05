@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="index.css">    
+</head>
+<body>
+
+    <h2>Application Form</h2>
+    <hr>
+    
+    <div class="application-form">
+        <form action="thanks.html" method="get" enctype="multipart/form-data">
+            
+            <!-- Name Section -->
+            <h4>Name</h4>
+            <div class="name-container">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="John" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+            </div> <br><br>
+
+            <hr>
+            
+            <!-- Email Section -->
+            <h4>Contact</h4>
+            <div class="contact-container">
+                <label for="telephone">Telephone</label> 
+                <input type="text" id="tel" name="telephone" placeholder="+254-700-000-000" required>
+                <label for="email">Email</label> 
+                <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+            </div> <br> </br>
+            <hr>
+            
+            <!-- Attachments Section -->
+            <h4>Attachments</h4>
+            <div class="attachment-container">
+                <label for="cover-letter"><strong>Cover Letter</strong></label>
+                <input type="file" id="cover-letter" name="cover-letter" required>
+                <br><br>
+                
+                <label for="resume"><strong>Resume</strong></label>
+                <input type="file" id="resume" name="resume" required>
+                <br><br>
+                
+                <label for="certificate"><strong>Certificate</strong></label>
+                <input type="file" id="certificate" name="certificate" required>
+                <br><br>
+                
+                <label for="other"><strong>Others</strong></label>
+                <input type="file" id="other" name="other-files" multiple>
+                
+            </div> <br><br>
+            
+            <hr>
+            
+            <!-- Comments Section -->
+            <h4>Comments</h4>
+            <div class="comment-container">
+                <label for="comment">Any comment?</label>
+                <textarea name="comment" id="comment" rows="4" cols="50" placeholder="Write your comments here..."></textarea>
+        
+            </div> <br><br>
+            <!-- Submit Button -->
+            <input type="submit" id="application-submit" value="Submit Application">
+            
+        </form>
+    </div>
+
+</body>
+</html>
