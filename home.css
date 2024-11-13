@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    border: none;
+    }
+
+    body {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    background-color: #bab7ff;
+    }
+
+    /* Style the header */
+    .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    /* Style the top navigation bar */
+    .topnav {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 120px;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: green;
+    border-radius: 10px;
+    }
+
+    /* Style the topnav links */
+    .topnav a {
+    /* float: left; */
+    display: flex;
+    color: #f2f2f2;
+    /* justify-content: space-between; */
+    text-align: center;
+    align-items: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    
+    }
+
+    /* Change color on hover */
+    .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    /* Create three unequal columns that floats next to each other */
+    .column {
+    float: left;
+    padding: 10px;
+    }
+
+    /* Left and right column */
+    .column.side {
+    width: 25%;
+    }
+
+    /* Middle column */
+    .column.middle {
+    width: 50%;
+    }
+
+    /* Clear floats after the columns */
+    .row::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+    }
